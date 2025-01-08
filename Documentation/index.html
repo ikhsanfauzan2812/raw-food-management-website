@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+	<title>Stexo - Responsive Admin & Dashboard</title>
+	<meta content="Admin Dashboard" name="description" />
+	<meta content="ThemesDesign" name="author" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+	<link rel="shortcut icon" href="favicon.ico">
+
+	<!-- Google-Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+
+	<!-- Bootstrap Core CSS -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" href="css/prettify.css" />
+
+	<!-- Custom CSS -->
+	<link href="css/styles.css" rel="stylesheet">
+
+	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+	<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+	<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+	<![endif]-->
+
+</head>
+
+<body>
+
+	<nav class="navbar navbar-default navbar-fixed-top">
+		<div class="container">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+
+				<a class="navbar-brand" href="#">Stexo - <small>Documentation 2.0</small></a>
+			</div>
+
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+			</div><!-- /.navbar-collapse -->
+		</div><!-- /.container-fluid -->
+	</nav>
+
+
+	<div id="wrapper">
+
+		<!-- Page Content -->
+		<div id="page-content-wrapper">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="right-bar">
+
+							<div id="intro" class="com-container">
+
+								<div id="structure" class="com-container">
+									<h3 class="text-center">Thank you very much for your purchase!</h3>
+									<div class="p-t-20">
+										<div class="alert alert-success alert-dismissable">
+											<p>If you have any questions that are beyond the scope of this documentation, please feel free to email or contact us via my page.</p>
+											<b>Suppoert Email:</b> themesdesign.in@gmail.com
+										</div>
+									</div>
+								</div>
+
+								<h4 class="page-header">Introduction</h4>
+
+								<p>Stexo is a bootstrap 5 based fully responsive admin template. It comes with lots of reusable and beautiful UI elements, widgets and features. It allows developer to easily build a super awesome web application.
+								</p>
+								<p>
+									You are important for us and so please feel free to get back to me with any question or feedback.
+								</p>
+
+
+
+
+								<div id="structure" class="com-container">
+									<h4 class="page-header">Structure</h4>
+									<p>I have tried my best to have standards and modular structure while developing the theme. Following sections are explaining the theme File &amp; Folder, structure, html file struture and plugins.</p>
+
+									<div class="row p-t-20">
+										<div class="col-sm-12">
+											<h4>File &amp; Folder Structure</h4>
+											<hr />
+
+											<pre class="mb-0">
+├── admin
+    ├── src directory
+        ├── assets
+            ├── fonts
+            ├── images
+            ├── js
+            └── scss
+                ├── custom
+                ├── _variables.scss
+                ├── _variables-dark.scss
+                ├── app.scss
+                ├── bootstrap.scss
+                └── icons.scss
+        ├── partials
+            ├── body.html
+            ├── footer.html
+            ├── head-css.html
+            ├── horizontal.html
+            ├── main.html
+            ├── menu.html
+            ├── page-title.html
+            ├── sidebar.html
+            ├── title-meta.html
+            ├── topbar.html
+            └── vendor-scripts.html
+        └── all html pages
+    ├── gulpfile.js
+    ├── package.json
+    └── yarn.lock
+                                        </pre>
+
+
+											<div class="row">
+												<div class="col-sm-12 p-t-30">
+													<h4>Setup</h4>
+													<hr>
+													<div class="p-lg-3 m-b-30">
+
+														<p>
+															We are using
+															<a href="https://gulpjs.com/" target="_blank">gulp</a> which allows to have
+															complete automatation for build flow. In case if
+															you don't know - Gulp is a gulp is a toolkit for automating painful or
+															time-consuming tasks in development workflow, so you can stop messing around and
+															build
+															something. You can read it more about it <a href="https://gulpjs.com/" target="_blank">here</a>.
+															Please follow below steps to install and setup all prerequisites:
+														</p>
+
+														<h4 class="m-t-30">Prerequisites</h4>
+
+														<p>
+															Please follow below steps to install and setup all prerequisites:
+														</p>
+
+
+														<ul>
+															<li>
+																<strong>Yarn</strong>
+																<p>
+																	Make sure to have the <a href="https://classic.yarnpkg.com/en/" target="_blank">Yarn</a> installed &amp; running
+																	in your computer.
+																	If you already have installed Yarn on your computer, you
+																	can skip this step. We suggest you to use Yarn instead
+																	of NPM.</p>
+															</li>
+															<li>
+																<strong>Nodejs</strong>
+																<p>
+																	Make sure to have the <a href="https://nodejs.org/" target="_blank">Node.js</a> installed &amp; running
+																	in your computer.
+																	If you already have installed Node on your computer, you
+																	can skip this step if your existing node latest version 16.13.2. </p>
+															</li>
+
+															<li>
+																<strong>Gulp</strong>
+
+																<p>Make sure to have the <a href="https://gulpjs.com/" target="_blank">Gulp</a> installed &amp; running in
+																	your computer. If you already have installed gulp on run
+																	command <code>npm install -g gulp</code> from your
+																	terminal.</p>
+															</li>
+
+															<li>
+																<strong>Git</strong>
+
+																<p>Make sure to have the <a href="https://git-scm.com/" target="_blank">Git</a> installed globally &amp;
+																	running on your computer. If you already have installed
+																	git on your computer, you can skip this step.</p>
+															</li>
+														</ul>
+														<!-- end ul -->
+														<h4 class="m-t-10">Installation</h4>
+														<p>
+															To setup admin theme, follow below mentioned steps:
+														</p>
+														<ul>
+															<li>
+																<strong>Install Prerequisites</strong>
+																<p>
+																	Make sure to have all above prerequisites installed &amp; running in
+																	your computer
+																</p>
+															</li>
+														</ul>
+														<!-- end ul -->
+														<p class="mt-4">
+															After you finished with above steps, you can run the following commands to run
+															project locally or build for production use:
+														</p>
+														<table class="table table-bordered m-0">
+															<thead>
+																<tr>
+																	<th style="width: 20%;">
+																		<i class="ti-file"></i> Command
+																	</th>
+																	<th>Description</th>
+																</tr>
+															</thead>
+															<!-- end thead -->
+															<tbody>
+																<tr>
+																	<td>
+																		<code>yarn install</code>
+																	</td>
+																	<td>
+																		This would install all the required dependencies in
+																		the <code>node_modules</code> folder.
+																	</td>
+																</tr>
+																<!-- end tr -->
+																<tr>
+																	<td>
+																		<code>gulp</code>
+																	</td>
+																	<td>
+																		Runs the project locally, starts the development
+																		server and watches for any changes in your code,
+																		including your HTML, javascript, sass, etc. The
+																		development server is accessible at <a href="http://localhost:3000">http://localhost:3000</a>.
+																	</td>
+																</tr>
+																<!-- end tr -->
+																<tr>
+																	<td>
+																		<code>gulp build</code>
+																	</td>
+																	<td>
+																		Generates a <code>/dist</code> directory with all
+																		the production files.
+																	</td>
+																</tr>
+																<!-- end tr -->
+															</tbody><!-- end tbody -->
+														</table><!-- end table -->
+													</div>
+												</div>
+											</div>
+										</div>
+
+									</div>
+
+									<div class="row">
+										<div class="col-lg-12">
+											<h4>Dark Version</h4>
+											<hr>
+											<div class="p-lg-1">
+												<p class="mb-0">
+													To have dark mode enabled, Keep your body element with data attribute
+													<code>data-bs-theme="dark"</code> in the <code> src/partials/body.html </code>
+													<br> E.g. <code> &lt;body data-bs-theme="dark"&gt;</code> to
+													have Dark layout.
+												</p>
+											</div>
+
+										</div>
+									</div>
+
+									<div class="row">
+										<div class="col-lg-12">
+											<h4>RTL Version</h4>
+											<hr>
+											<div class="p-lg-1">
+												<p class="mb-0">
+													To have rtl direction enabled, replace the reference of
+													<code>app.min.css</code> to
+													<code>app-rtl.min.css</code> and
+													<code>bootstrap.min.css</code> to
+													<code>bootstrap-rtl.min.css</code> and in the <code>src/partials/main.html</code> file update the html tag like <code>&lt;html lang="en" dir="rtl"&gt;</code>.
+													<br> in the <code> src/partials/head-css.html </code> and make sure to
+													update the <code>src/assets/js/app.js </code> has initSettings()
+													function which you need to comment out. Because it will set to default the light version.
+												</p>
+											</div>
+
+										</div>
+									</div>
+
+
+
+									<div id="credits" class="com-container">
+										<h4 class="page-header">Credits &amp; Official Documentation</h4>
+										<p>I've used the following resources as listed. These are some awesome creation and I am really thankful to the respective community.</p>
+
+										<ul class="">
+											<li><a href="http://getbootstrap.com/">Bootstrap</a></li>
+											<li><a href="https://jquery.com/">Jquery</a></li>
+											<li><a href="http://fortawesome.github.io/Font-Awesome/">Font-Awesome</a></li>
+											<li><a href="https://themify.me/themify-icons">Thimify</a></li>
+											<li><a href="https://github.com/google/material-design-icons">MD-icons</a></li>
+											<li><a href="http://daneden.github.io/animate.css/">Animate.css</a></li>
+											<li><a href="https://github.com/sweetalert2/sweetalert2">Sweet-Alert2</a></li>
+											<li><a href="http://arshaw.com/fullcalendar/">Full Calendar</a></li>
+											<li><a href="https://github.com/fabien-d/alertify.js/">Alertify</a></li>
+											<li><a href="https://github.com/Eonasdan/bootstrap-datetimepicker">Bootstrap Datetimepicker</a></li>
+											<li><a href="https://github.com/mimo84/bootstrap-maxlength">Bootstrap Maxlength</a></li>
+											<li><a href="https://github.com/dreyescat/bootstrap-rating">Bootstrap Rating</a></li>
+											<li><a href="https://github.com/orangehill/bootstrap-session-timeout">Bootstrap Session Timeout</a></li>
+											<li><a href="https://github.com/istvan-ujjmeszaros/bootstrap-touchspin">Bootstrap Touchspin</a></li>
+											<li><a href="http://jdewit.github.com/bootstrap-timepicker">Bootstrap Timepicker</a></li>
+											<li><a href="https://github.com/farbelous/bootstrap-colorpicker">Bootstrap Colorpicker</a></li>
+											<li><a href="https://github.com/summernote/summernote">Summernote</a></li>
+											<li><a href="https://www.datatables.net">Datatables</a></li>
+											<li><a href="https://github.com/c3js/c3">C3 Chart</a></li>
+											<li><a href="https://gionkunz.github.io/chartist-js/">Chartist</a></li>
+											<li><a href="https://github.com/weareoutman/clockpicker">Clockpicker</a></li>
+											<li><a href="https://github.com/thecreation/jquery-asColorPicker">ColorPicker</a></li>
+											<li><a href="https://github.com/d3/d3">d3</a></li>
+											<li><a href="https://github.com/enyo/dropzone/">Dropzone</a></li>
+											<li><a href="https://github.com/jquery/jquery-ui">Jquery-ui</a></li>
+											<li><a href="https://github.com/dimsemenov/Magnific-Popup">Popup</a></li>
+											<li><a href="https://github.com/guillaumepotier/Parsley.js">Parsley</a></li>
+											<li><a href="https://github.com/PrismJS/prism">Prism</a></li>
+											<li><a href="https://github.com/DmitryBaranovskiy/raphael">Raphael</a></li>
+											<li><a href="https://github.com/mindmup/editable-table">Tiny-editable</a></li>
+											<li><a href="https://github.com/tinymce/tinymce">Tinymce</a></li>
+											<li><a href="http://morrisjs.github.io/morris.js/">Morris</a></li>
+											<li><a href="http://chartjs.org/">Chartjs</a></li>
+											<li><a href="http://omnipotent.net/jquery.sparkline/">Sparkline</a></li>
+											<li><a href="https://github.com/aterrien/jQuery-Knob">JQuery-Knob</a></li>
+											<li><a href="https://hpneo.github.io/gmaps/">Gmaps</a></li>
+											<li><a href="http://jqvmap.com">Vector Maps</a></li>
+											<li><a href="http://www.flotcharts.org/">Flot-charts</a></li>
+											<li><a href="http://parsleyjs.org/">Validation</a></li>
+											<li><a href="https://github.com/RobinHerbots/Inputmask">Bootstrap-Inputmask</a></li>
+											<li><a href="https://github.com/silviomoreto/bootstrap-select">Bootstrap-select</a></li>
+											<li><a href="https://github.com/abpetkov/powerange">Powerange slider</a></li>
+											<li><a href="https://github.com/dio-el-claire/jquery-multiselect">Multiselect</a></li>
+											<li><a href="https://github.com/moment/moment">Moment</a></li>
+											<li><a href="https://github.com/mouse0270/bootstrap-notify">Notify</a></li>
+											<li><a href="https://github.com/benpickles/peity">Peity</a></li>
+											<li><a href="https://github.com/nadangergeo/RWD-Table-Patterns">RWD-Table</a></li>
+											<li><a href="https://github.com/select2/select2">Select2</a></li>
+											<li><a href="https://github.com/vsn4ik/jquery.spinner">Spinner</a></li>
+											<li><a href="https://github.com/xoxco/jQuery-Tags-Input">Tags-Input</a></li>
+											<li><a href="https://github.com/mindmup/editable-table">Editable-Table</a></li>
+											<li><a href="https://github.com/markcell/jquery-tabledit">Tabledit</a></li>
+											<li><a href="https://github.com/simontabor/jquery-toggles">Toggles</a></li>
+											<li><a href="https://github.com/imakewebthings/waypoints">Waypoints</a></li>
+										</ul>
+									</div>
+
+									<div id="support" class="com-container">
+										<h4 class="page-header">Support</h4>
+										<p class="m-t-20">
+											Once again thank you for purchasing the theme. I am always avaialble to help you. If you have any suggestion or feature to make it more better, I am requesting you to contact me, I'll try my best to add them in future updates.
+										</p>
+
+										<p>
+											Best,
+										</p>
+										<p class="text-primary">
+											- <strong>themesdesign.in</strong>
+										</p>
+									</div>
+
+									<div id="changelog" class="com-container">
+										<h4 class="page-header">Change Log</h4>
+
+										<p style="margin-top: 20px;"><span style="text-decoration: underline; font-weight: 600;">Version 2.0.0 </span> &nbsp;&nbsp;&nbsp;<small class="text-muted"> 19 December 2023</small></p>
+
+										<ul>
+											<li>
+												Updated bootstrap to v5.3.2
+											</li>
+											<li>
+												Updated dark mode.
+											</li>
+											<li>
+												Fixed Minor issue.
+											</li>
+										</ul>
+
+										<p style="margin-top: 20px;"><span style="text-decoration: underline; font-weight: 600;">Version 1.1.0 </span> &nbsp;&nbsp;&nbsp;<small class="text-muted"> 23 Dec 2019</small></p>
+
+										<ul>
+											<li>
+												Updated bootstrap to v4.4.1
+											</li>
+										</ul>
+
+										<p style="margin-top: 20px;"><span style="text-decoration: underline; font-weight: 600;">Version 1.0.0 </span> &nbsp;&nbsp;&nbsp;<small class="text-muted"> 19 July 2019</small></p>
+
+										<ul>
+											<li>
+												Initial released
+											</li>
+										</ul>
+									</div>
+
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- /#page-content-wrapper -->
+
+				<div class="text-center ">
+					<p class="text-dark p-t-20">
+						<script>document.write(new Date().getFullYear())</script> © Design by <a href="https://1.envato.market/themesdesign" target="_blank" class="text-primary">Themesdesign</a>
+					</p>
+				</div>
+			</div>
+			<!-- /#wrapper -->
+
+			<!-- jQuery -->
+			<script src="js/jquery.js"></script>
+
+			<!-- Bootstrap Core JavaScript -->
+			<script src="js/bootstrap.min.js"></script>
+
+			<script src="js/jquery.easing.min.js"></script>
+
+			<script type="text/javascript" src="js/prettify.js"></script>
+
+</body>
+
+</html>
